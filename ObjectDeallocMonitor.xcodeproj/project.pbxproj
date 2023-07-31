@@ -17,6 +17,8 @@
 		E65EB67B2A75039B00FFC603 /* ObjectDeallocMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65EB67A2A75039B00FFC603 /* ObjectDeallocMonitorTests.m */; };
 		E65EB6852A75039B00FFC603 /* ObjectDeallocMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65EB6842A75039B00FFC603 /* ObjectDeallocMonitorUITests.m */; };
 		E65EB6872A75039B00FFC603 /* ObjectDeallocMonitorUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65EB6862A75039B00FFC603 /* ObjectDeallocMonitorUITestsLaunchTests.m */; };
+		E65EB6962A7503CD00FFC603 /* ObjectDeallocMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E65EB6952A7503CD00FFC603 /* ObjectDeallocMonitor.m */; };
+		E6E373422A750503002E6119 /* NSObject+DeallocMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E373412A750503002E6119 /* NSObject+DeallocMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		E65EB6802A75039B00FFC603 /* ObjectDeallocMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectDeallocMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65EB6842A75039B00FFC603 /* ObjectDeallocMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectDeallocMonitorUITests.m; sourceTree = "<group>"; };
 		E65EB6862A75039B00FFC603 /* ObjectDeallocMonitorUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectDeallocMonitorUITestsLaunchTests.m; sourceTree = "<group>"; };
+		E65EB6942A7503CD00FFC603 /* ObjectDeallocMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectDeallocMonitor.h; sourceTree = "<group>"; };
+		E65EB6952A7503CD00FFC603 /* ObjectDeallocMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectDeallocMonitor.m; sourceTree = "<group>"; };
+		E6E373402A750503002E6119 /* NSObject+DeallocMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocMonitor.h"; sourceTree = "<group>"; };
+		E6E373412A750503002E6119 /* NSObject+DeallocMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocMonitor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		E65EB65D2A75039900FFC603 /* ObjectDeallocMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				E65EB6932A7503AB00FFC603 /* DeallocMonitor */,
 				E65EB65E2A75039900FFC603 /* AppDelegate.h */,
 				E65EB65F2A75039900FFC603 /* AppDelegate.m */,
 				E65EB6612A75039900FFC603 /* SceneDelegate.h */,
@@ -134,6 +141,17 @@
 				E65EB6862A75039B00FFC603 /* ObjectDeallocMonitorUITestsLaunchTests.m */,
 			);
 			path = ObjectDeallocMonitorUITests;
+			sourceTree = "<group>";
+		};
+		E65EB6932A7503AB00FFC603 /* DeallocMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				E65EB6942A7503CD00FFC603 /* ObjectDeallocMonitor.h */,
+				E65EB6952A7503CD00FFC603 /* ObjectDeallocMonitor.m */,
+				E6E373402A750503002E6119 /* NSObject+DeallocMonitor.h */,
+				E6E373412A750503002E6119 /* NSObject+DeallocMonitor.m */,
+			);
+			path = DeallocMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E65EB6662A75039900FFC603 /* ViewController.m in Sources */,
+				E6E373422A750503002E6119 /* NSObject+DeallocMonitor.m in Sources */,
 				E65EB6602A75039900FFC603 /* AppDelegate.m in Sources */,
 				E65EB6712A75039B00FFC603 /* main.m in Sources */,
 				E65EB6632A75039900FFC603 /* SceneDelegate.m in Sources */,
+				E65EB6962A7503CD00FFC603 /* ObjectDeallocMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

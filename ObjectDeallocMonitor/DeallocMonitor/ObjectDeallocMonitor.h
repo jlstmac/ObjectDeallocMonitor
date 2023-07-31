@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ObjectDeallocMonitor : NSObject
-
+- (instancetype)initWithBlock:(dispatch_block_t)block;
 @end
 
 NS_ASSUME_NONNULL_END
